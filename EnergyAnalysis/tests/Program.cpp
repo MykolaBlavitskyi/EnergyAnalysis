@@ -12,7 +12,7 @@ int main() {
         drzewo.dodajPunkt(punkt);
     }
 
-    // Виконання основних операцій
+    
     std::cout << "Suma autokonsumpcji: " << drzewo.sumaAutokonsumpcji(2021, 10, 3, 2) << std::endl;
 
     return 0;
