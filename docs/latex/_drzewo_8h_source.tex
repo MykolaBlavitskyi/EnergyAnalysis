@@ -1,0 +1,28 @@
+\doxysection{Drzewo.\+h}
+\hypertarget{_drzewo_8h_source}{}\label{_drzewo_8h_source}\index{EnergyAnalysis/src/Drzewo.h@{EnergyAnalysis/src/Drzewo.h}}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{preprocessor}{\#ifndef\ DRZEWO\_H}}
+\DoxyCodeLine{00002\ \textcolor{preprocessor}{\#define\ DRZEWO\_H}}
+\DoxyCodeLine{00003\ }
+\DoxyCodeLine{00004\ \textcolor{preprocessor}{\#include\ <map>}}
+\DoxyCodeLine{00005\ \textcolor{preprocessor}{\#include\ <vector>}}
+\DoxyCodeLine{00006\ \textcolor{preprocessor}{\#include\ "{}Punkt.h"{}}}
+\DoxyCodeLine{00007\ }
+\DoxyCodeLine{00008\ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_drzewo}{Drzewo}}\ \{}
+\DoxyCodeLine{00009\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00010\ \ \ \ \ \textcolor{keywordtype}{void}\ dodajPunkt(\textcolor{keyword}{const}\ \mbox{\hyperlink{class_punkt}{Punkt}}\&\ punkt);}
+\DoxyCodeLine{00011\ }
+\DoxyCodeLine{00012\ \ \ \ \ \textcolor{keywordtype}{double}\ sumaAutokonsumpcji(\textcolor{keywordtype}{int}\ rok,\ \textcolor{keywordtype}{int}\ miesiac,\ \textcolor{keywordtype}{int}\ dzien,\ \textcolor{keywordtype}{int}\ cwartka);}
+\DoxyCodeLine{00013\ \ \ \ \ \textcolor{keywordtype}{double}\ sumaEksportu(\textcolor{keywordtype}{int}\ rok,\ \textcolor{keywordtype}{int}\ miesiac,\ \textcolor{keywordtype}{int}\ dzien,\ \textcolor{keywordtype}{int}\ cwartka);}
+\DoxyCodeLine{00014\ \ \ \ \ \textcolor{keywordtype}{double}\ sumaImportu(\textcolor{keywordtype}{int}\ rok,\ \textcolor{keywordtype}{int}\ miesiac,\ \textcolor{keywordtype}{int}\ dzien,\ \textcolor{keywordtype}{int}\ cwartka);}
+\DoxyCodeLine{00015\ \ \ \ \ \textcolor{keywordtype}{double}\ sumaPoboru(\textcolor{keywordtype}{int}\ rok,\ \textcolor{keywordtype}{int}\ miesiac,\ \textcolor{keywordtype}{int}\ dzien,\ \textcolor{keywordtype}{int}\ cwartka);}
+\DoxyCodeLine{00016\ \ \ \ \ \textcolor{keywordtype}{double}\ sumaProdukcji(\textcolor{keywordtype}{int}\ rok,\ \textcolor{keywordtype}{int}\ miesiac,\ \textcolor{keywordtype}{int}\ dzien,\ \textcolor{keywordtype}{int}\ cwartka);}
+\DoxyCodeLine{00017\ }
+\DoxyCodeLine{00018\ \textcolor{keyword}{private}:}
+\DoxyCodeLine{00019\ \ \ \ \ std::map<int,\ std::map<int,\ std::map<int,\ std::map<int,\ std::vector<Punkt>>>>>\ dane;}
+\DoxyCodeLine{00020\ \};}
+\DoxyCodeLine{00021\ }
+\DoxyCodeLine{00022\ \textcolor{preprocessor}{\#endif}}
+
+\end{DoxyCode}
